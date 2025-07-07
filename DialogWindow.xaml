@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfCounterApp.DialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Confirm Action" Height="180" Width="300"
+        AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Background="{DynamicResource PrimaryBackgroundColor}"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        WindowStartupLocation="CenterOwner"
+        Foreground="{DynamicResource PrimaryForegroundColor}"
+        BorderBrush="#FF0C0C0C" BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ContentTextBlock"
+                   Grid.Row="0"
+                   Text="Template Message"
+                   TextAlignment="Center"
+                   TextWrapping="WrapWithOverflow"
+                   FontSize="24"
+                   Margin="12"
+                   FontFamily="Century Gothic"
+                   VerticalAlignment="Center"/>
+        
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <Button x:Name="ApproveButton"
+                    Style="{DynamicResource CustomButton}"
+                Content="&#xE73E;"
+                    FontFamily="Segoe MDL2 Assets"
+                    BorderThickness="0"
+                    Width="40" Height="40" Margin="5"
+                    FontSize="22"
+                    Click="ApproveButton_Click"/>
+                <Button x:Name="DisapproveButton"
+                    Style="{DynamicResource CustomButton}"
+                    Content="&#xE711;"
+                    FontFamily="Segoe MDL2 Assets"
+                    BorderThickness="0"
+                    Width="40" Height="40" Margin="5"
+                    FontSize="22"
+                    Click="DisapproveButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
