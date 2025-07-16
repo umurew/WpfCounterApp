@@ -4,10 +4,13 @@ using System.Windows.Input;
 namespace WpfCounterApp
 {
     /// <summary>
-    /// DialogWindow.xaml etkileşim mantığı
+    /// Interaction logic for DialogWindow.xaml
     /// </summary>
     public partial class DialogWindow : Window
     {
+        public bool Confirmed { get; private set; } = false;
+        /// This variable is set to false by default.
+
         public DialogWindow(string? Content)
         {
             InitializeComponent();
@@ -15,9 +18,6 @@ namespace WpfCounterApp
             if (Content != null)
                 ContentTextBlock.Text = Content;
         }
-
-        public bool Confirmed { get; private set; } = false;
-        /// This variable is set to false by default.
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -30,10 +30,6 @@ namespace WpfCounterApp
             this.Close();
         }
 
-        private void DisapproveButton_Click(object sender, RoutedEventArgs e)
-        {
-            Confirmed = false;
-            this.Close();
-        }
+        private void DisapproveButton_Click(object sender, RoutedEventArgs e) => this.Close();
     }
 }

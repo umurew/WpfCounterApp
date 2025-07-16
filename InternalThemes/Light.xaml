@@ -3,6 +3,7 @@
 
     <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="#FFFFFF"/>
     <SolidColorBrush x:Key="PrimaryForegroundColor" Color="#000000"/>
+    <SolidColorBrush x:Key="PrimaryBorderBrushColor" Color="Black"/>
 
     <SolidColorBrush x:Key="ButtonBackground" Color="#FFFFFF"/>
     <SolidColorBrush x:Key="ButtonHoverBackground" Color="#FFEFEFEF"/>
@@ -12,7 +13,6 @@
         <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
         <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColor}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ButtonBackground}"/>
-        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="10,5"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Template">
@@ -37,7 +37,7 @@
                         <!-- Disabled Effect -->
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="ButtonBorder" Property="Background" Value="{DynamicResource ButtonBackground}"/>
-                            <Setter TargetName="ButtonBorder" Property="Opacity" Value="0.5"/>
+                            <Setter TargetName="ButtonBorder" Property="Opacity" Value="0.4"/>
                             <Setter Property="Foreground" Value="{DynamicResource PrimaryForegroundColor}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>

@@ -11,7 +11,7 @@
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         WindowStartupLocation="CenterOwner"
         Foreground="{DynamicResource PrimaryForegroundColor}"
-        BorderBrush="#FF0C0C0C" BorderThickness="1">
+        BorderBrush="{DynamicResource PrimaryBorderBrushColor}" BorderThickness="1">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -35,7 +35,7 @@
                     FontFamily="Segoe MDL2 Assets"
                     BorderThickness="0"
                     Width="40" Height="40" Margin="5"
-                    FontSize="22"
+                    FontSize="20"
                     Click="ApproveButton_Click"/>
                 <Button x:Name="DisapproveButton"
                     Style="{DynamicResource CustomButton}"
@@ -43,7 +43,7 @@
                     FontFamily="Segoe MDL2 Assets"
                     BorderThickness="0"
                     Width="40" Height="40" Margin="5"
-                    FontSize="22"
+                    FontSize="20"
                     Click="DisapproveButton_Click"/>
         </StackPanel>
     </Grid>
