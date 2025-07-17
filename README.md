@@ -39,6 +39,7 @@ Here is the Roadmap about this project.
   * Might need to change how theme changing works
   * Probably going to need another dialog for theme selecting, maybe could put it into settings tab
 - [ ] Add the logic for theme saving & loading on startup
+- [ ] Add localization
 
 ## Contributing
 So you're thinking about contributing to this project? Great! I appreciate it a lot.
