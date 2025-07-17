@@ -30,7 +30,7 @@ Here is the Roadmap about this project.
 - [x] Add a reset function for counter
   * Create a new window to be used as a dialog
   * Add the logic for the callback buttons
-- [+] Add settings
+- [x] Add settings
   * Create a new window
   * Add an option for everytime reset confirmation
   * Add an option for topmost
