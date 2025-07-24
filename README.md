@@ -21,23 +21,36 @@ There are no documentation existing for now. Only thing you must know is below.
 ## Roadmap
 Here is the Roadmap about this project.
 
-- [x] Create a new project
-- [x] Add light & dark themes
-- [x] Add a counter
-  * Add a label to display
-- [x] Add control buttons for counter
-- [x] Add window control buttons (Minimize & Exit)
-- [x] Add a reset function for counter
-  * Create a new window to be used as a dialog
-  * Add the logic for the callback buttons
-- [x] Add settings
-  * Create a new window
-  * Add an option for everytime reset confirmation
-  * Add an option for topmost
-  * Add an option for locking resizing
-- [x] Add the logic for theme saving & loading on startup
-- [ ] Add user themes
-- [ ] Add localization
+- [x] Create a new WPF project
+- [x] Add counter and label
+- [x] Add increment/decrement/reset buttons
+- [x] Add Minimize & Exit buttons
+- [x] Reset Confirmation
+  - [x] Add Popup
+  - [x] Add logic for focus losts and popup
+- [x] Add light & dark built-in themes
+- [x] Load & save selected theme on startup
+- [ ] User Theme Support
+  - [x] Add custom theme creation & saving
+  - [ ] Add visual theme editor (color picker, preview, etc.)
+- [ ] (Optional) Add "follow system theme" support
+- [x] Create new settings window (Configurations)
+- [ ] Add “Always ask before reset” toggle
+- [x] Add “Keep window on top (Topmost)” toggle
+- [x] Add “Lock window resizing” toggle
+- [x] Save and load settings from config file
+- [ ] Create resource files (.resx) for different languages
+- [ ] Apply localization to all text elements
+- [x] Add language selection in Settings
+- [ ] (Optional) Auto-detect system language
+- [ ] Add onboarding or help tooltips
+- [ ] Add animations/transitions
+- [ ] Add keyboard shortcuts (e.g. R for reset)
+- [x] Add toast-style feedback messages (e.g. “Theme saved!”)
+- [ ] Code cleanup and add comments
+- [ ] Test on different screen sizes
+- [ ] Package as standalone `.exe`
+- [x] (Optional) Publish on GitHub or personal website
 
 ## Contributing
 So you're thinking about contributing to this project? Great! I appreciate it a lot.
