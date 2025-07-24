@@ -30,15 +30,14 @@ Here is the Roadmap about this project.
 - [x] Add a reset function for counter
   * Create a new window to be used as a dialog
   * Add the logic for the callback buttons
-- [ ] Add settings
+- [x] Add settings
   * Create a new window
   * Add an option for everytime reset confirmation
   * Add an option for topmost
   * Add an option for locking resizing
-- [ ] Add custom themes
-  * Might need to change how theme changing works
-  * Probably going to need another dialog for theme selecting, maybe could put it into settings tab
-- [ ] Add the logic for theme saving & loading on startup
+- [x] Add the logic for theme saving & loading on startup
+- [ ] Add user themes
+- [ ] Add localization
 
 ## Contributing
 So you're thinking about contributing to this project? Great! I appreciate it a lot.
