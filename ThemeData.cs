@@ -1,22 +1,11 @@
-﻿using System.Windows.Media;
-
-namespace WpfCounterApp
+﻿namespace WpfCounterApp
 {
     public class ThemeData
     {
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public bool IsDefault { get; set; }
-        public bool IsEmbedded { get; set; }
-        public Uri Uri { get; set; }
-        public SolidColorBrush PrimaryColor { get; set; }
-
-        public ThemeData(string name, bool isDefault, bool isEmbedded, Uri uri, SolidColorBrush primaryColor)
-        {
-            Name = name;
-            IsDefault = isDefault;
-            IsEmbedded = isEmbedded;
-            Uri = uri;
-            PrimaryColor = primaryColor;
-        }
+        public bool IsBuiltIn { get; set; }
+        public required Uri Uri { get; set; }
+        public string PrimaryColor { get; set; }
     }
 }
